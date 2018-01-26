@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uzair.contact.Details"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/c_bg"
+        >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/c_ic"
+
+            />
+        <TextView
+            android:id="@+id/tv_name_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="M Uzair Imtiaz"
+            android:textSize="22dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#ffff"
+            />
+
+    </RelativeLayout>
+<TextView
+    android:id="@+id/tv_phone_number_details"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+923367997557"
+    android:layout_gravity="center"
+    android:textSize="20dp"
+    android:layout_marginTop="35dp"/>
+    <TextView
+        android:id="@+id/tv_email_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uzairimtiaz44@gmail.com"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="35dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        >
+        <Button
+            android:layout_margin="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/call"
+            android:id="@+id/call_icon_details"
+
+
+            />
+        <Button
+            android:id="@+id/details_message_icon"
+            android:layout_margin="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/message"
+            android:layout_toRightOf="@id/call_icon_details"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_margin="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/update_icon"
+            android:id="@+id/details_Update_icon"
+
+
+            />
+        <Button
+            android:id="@+id/details_delete_icon"
+            android:layout_margin="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/dalate_btn"
+            />
+    </LinearLayout>
+</LinearLayout>
